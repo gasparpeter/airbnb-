@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main{
+   
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ), url(../../img/buildings-1867550_1920.jpg);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 10vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.8), 
+            rgba(0, 0, 0, 0.8)
+        );
+
+        .logo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-items: center;
+            
+
+            .airbnb-svg{
+                width: 60px;
+                height: 60px;
+                display: inline-block;
+            }
+            h2{
+                color:#fff;
+                font-size: 30px;
+                display: inline-block;
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+
+        ul{
+            min-width: 50%;
+            // background-color: rebeccapurple;
+            display: flex;
+            justify-content: space-between;
+            font-family: 'Roboto', sans-serif;
+            
+
+            li{
+                list-style-type: none;
+                padding: 22px 10px;
+
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    letter-spacing: 3px;
+                    font-weight: 500;
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+               
+            }
+        }
+
+        .settings-menu{
+            display: flex;
+            min-width: 220px;
+            justify-content: space-between;
+
+            .language{
+                display: flex;
+                align-items: center;
+                width: 70px;
+                justify-content: space-evenly;
+                cursor: pointer;
+    
+                .global{
+                    width: 30px;
+                    height: 30px;
+                }
+                .arrow{
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+    
+            .menu{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: #3E435F;
+                padding: 10px 10px;
+                border-radius: 40px;
+                width: 120px;
+    
+                .ham-menu{
+                    width: 30px;
+                    height: 25px;
+                    align-self: center;
+                    cursor: pointer;
+                }
+                .profile{
+                    width: 40px;
+                    height: 40px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        
+    }
+
+    h1{
+        color:#fff;
+    }
+}
+
+@media only screen and (max-width: 1590px){
+    main{
+
+        nav{
+            justify-content: space-between;
+
+            .logo{
+                margin-left: 10px;
+            }
+            .settings-menu{
+                margin-right: 10px;
+            }
+            ul{
+                min-width: 800px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1240px){
+    main{
+
+        nav{
+
+            ul{
+                display: none;
+            }
+        }
+    }
+}
